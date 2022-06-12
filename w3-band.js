@@ -1,7 +1,16 @@
+
+
 const buyBtns = document.querySelectorAll('.js-buy-ticket')
 const modal = document.querySelector('.js-modal')
 const modalContainer = document.querySelector('.js-modal-container')
 const closeModal =  document.querySelector('.js-modal-close')
+var header = document.getElementById('header');
+var mobileMenu = document.querySelector('.mobile-menu-btn')
+var  headerHeight = header.clientHeight;
+var menuItems =document.querySelectorAll('#nav li a[href*="#"]')
+
+
+
 
 //Hàm hiển thị Modal mua ve
 function showBuyTickets(){
@@ -26,4 +35,30 @@ modalContainer.addEventListener('click', function (event){
     event.stopPropagation()
 })
 
-//  
+// Hàm click show menu//
+  mobileMenu.onclick = function(){
+     var isClose = header.clientHeight === headerHeight;
+     if(isClose){
+         header.style.height = 'auto';
+     }
+    else{
+        header.style.height = null;
+    }
+  }
+
+//Tự động đóng khi chọn phần tử trong menu
+for (var i = 0; i< menuItems.length ; i++){
+    var menuItem = menuItems[i];
+    
+    menuItem.onclick = function(event){
+        var isParentmenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+
+        if(isParentmenu){
+            event.preventDefault(); 
+        } else {
+            header.style.height = null;
+        }
+        
+    }
+    
+}

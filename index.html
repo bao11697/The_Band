@@ -7,6 +7,7 @@
     <title>The Band</title>
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon/favicon-32x32.png">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
    
 </head>
@@ -20,7 +21,7 @@
                <li><a href="#tour">Tour</a></li>
                <li><a href="#contact">Contact</a></li>
                <li>
-                   <a href="">
+                   <a href="#">
                        More
                        <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
@@ -33,11 +34,15 @@
                 </li>
            </ul> 
             <!-- End: Nav -->
-            <!-- Begin: Search button -->
+            <!-- : mobile button -->
+            <div class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
+            </div>
+            <!-- : Search button -->
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
             </div>
-            <!-- End: Search button -->
+
 
         </div>
 
@@ -60,17 +65,17 @@
                         adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
                     <div class="row member-list">
-                        <div class="col col-third text-center">
+                        <div class="col col-third s-col-full mt-32 text-center">
                             <p class="member-name">Name</p>
                             <img src="./assets/img/slider/bandmember.jpg" alt="Name" class="member-img">
                         </div>
     
-                        <div class="col col-third text-center">
+                        <div class="col col-third s-col-full mt-32 text-center">
                             <p class="member-name">Name</p>
                             <img src="./assets/img/slider/bandmember.jpg" alt="Name" class="member-img">
                         </div>
     
-                        <div class="col col-third text-center">
+                        <div class="col col-third s-col-full mt-32 text-center">
                             <p class="member-name">Name</p>
                             <img src="./assets/img/slider/bandmember.jpg" alt="Name" class="member-img">
                         </div>                 
@@ -90,33 +95,33 @@
                         </ul>
                          <!-- Places  -->
                     <div class="row places-list">
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <img src="./assets/img/places/newyork.jpg" alt="New York img" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">New York</h3>
                                 <p class="place-time">Fri 27 Nov 2022</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn js-buy-ticket s-full-width">Buy Tickets</button>
                             </div>
                         </div>
                         
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <img src="./assets/img/places/paris.jpg" alt="New York img" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Paris</h3>
                                 <p class="place-time">Sat 28 Nov 2022</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn js-buy-ticket s-full-width">Buy Tickets</button>
                             </div>
                         </div>
 
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <img src="./assets/img/places/sanfran.jpg" alt="New York img" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">San Francisco</h3>
                                 <p class="place-time">Sun 29 Nov 2022</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn js-buy-ticket s-full-width">Buy Tickets</button>
                             </div>
                         </div>
                         
@@ -131,7 +136,7 @@
                     
 
                     <div class="row contact-content">
-                        <div class="col col-haft contact-info">
+                        <div class="col col-haft s-col-full contact-info">
                             <p><i class="ti-location-pin"></i>Chicago, Us</p>
 
                             <p><i class="ti-mobile"></i>Phone: +00 151515</p>
@@ -140,14 +145,14 @@
                         </div>
 
 
-                        <div class="col col-haft contact-form">
+                        <div class="col col-haft s-col-full contact-form">
                             <form action="">
                                 <div class="row">
-                                    <div class="col col-haft">
+                                    <div class="col col-haft s-col-full">
                                         <input type="text" name="" required id="" placeholder="Name" class="form-control">
                                     </div>
 
-                                    <div class="col col-haft">
+                                    <div class="col col-haft s-col-full s-mt-8">
                                         <input type="email" name="" required id="" placeholder="Email" class="form-control">
                                     </div>
 
@@ -160,7 +165,7 @@
 
                                 </div>
                         
-                                <input class="pill-right btn mt-16" type="submit" value="SEND">
+                                <input class="pill-right btn mt-16 s-full-width " type="submit" value="SEND">
                             
 
                             </form>
