@@ -66,9 +66,11 @@ html{
     padding: 11px 16px;
     display: inline-block;
     color: #fff;
-    padding-bottom: 16px;
+    /* padding-bottom: 16px; */
     font-size: 14px;
     border: none;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .btn:hover{
@@ -211,6 +213,7 @@ html{
     transform: translateX(-50%); */
     width: 100%;
     text-align: center;
+    text-shadow: 0 0 5px #000;
 }
 
 #slider .text-heading {
@@ -360,6 +363,15 @@ line-height: 1.4;
     line-height: 1.5;
 }
 
+.contact-info a {
+    color:#00e ;
+    opacity: 0.8;
+}
+
+.contact-info a:hover {
+    opacity: 1;
+}
+
 .contact-info i[class*="ti-"] {
     width: 30px;
     display: inline-block;
@@ -376,6 +388,11 @@ line-height: 1.4;
     padding: 10px;
     border: 1px solid #ccc;
     width: 100%;
+}
+
+.contact-form .btn  {
+    padding: 11px 40px;
+    
 }
 
 .map-section img {

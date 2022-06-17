@@ -1,16 +1,63 @@
 
 /* PC */
-@media (min-width :1024px){
+@media (min-width :64em){
 
 }
 
+/* Tablet & mobile */
+@media (max-width :63.9375em) {
+    .btn {
+        padding: 15px 16px;
+    }
+    #nav .subnav a{
+        padding: 5px 14.5px;
+    }
+    .contact-form .form-control {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .contact-form .btn  {
+        padding: 11px 40px;
+        font-size: 16px;
+    }
+
+    #footer .socials-list {
+        font-size: 38px;
+    }
+
+    #footer .socials-list a {
+        margin: 0 8px;
+    }
+
+    #footer .copyright {
+        font-size: 22px;
+    }
+
+    #footer .copyright a {
+        padding: 14px 0;
+        display: inline-block;
+    }
+}
+
 /* Tablet */
-@media (min-width :740px) and  (max-width :1023px){
+@media (min-width :46.25em) and  (max-width :63.9375em){
+
+
+    .contact-form {
+        width: 60%;
+    }
+
+    .contact-info {
+        line-height: 2;
+        letter-spacing: 1.8px;
+        width: 40%;
+    }
 
 }
 
 /* Mobile */
-@media (max-width :740px){
+@media (max-width :46.1875em){
 
         .s-full-width,
         .s-col-full {
@@ -64,12 +111,39 @@
             width: 60%;
         }
         .contact-form {
-            margin-top: 16px;
+            margin-top: 30px;
         }
 
-    
- 
+        .contact-info {
+            line-height: 2;
+            letter-spacing: 1.2px;
+        }
+  
+}
 
-     
+/* Mobile with nhỏ hơn 395 như iphone SE - 12 Pro  */
+@media (max-width :24.6875em) {
+    #footer .socials-list {
+        font-size: 33px;
+    }
+}
 
+
+/* galaxy Fold width = 280 : external display  */
+@media (max-width :17.8125em) {
+
+    .contact-info {
+        font-size: 16px;
+    }
+
+    #footer .socials-list {
+        font-size: 28px;
+    }
+    #footer .socials-list a {
+        margin: 6px 8px;
+        padding: 3px 8px;
+    }
+    #footer .copyright {
+        font-size: 18px;
+    }
 }
